@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Таня Кошурникова](https://up.htmlacademy.ru/htmlcss/24/user/883021).
-* Наставник: `Неизвестно`.
+* Наставник: [Роман Коробейников](https://htmlacademy.ru/profile/rkorobeynikov).
 
 ---
 
