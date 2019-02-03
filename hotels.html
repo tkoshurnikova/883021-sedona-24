@@ -20,9 +20,69 @@
   			</nav>  			
   		</header>
   		<main>
-        <section class="filter">
+        <section class="filter-form">
           <h2 class="visually-hidden">Фильтр: поиск гостиницы</h2>
-          <!-- На следующем этапе будет форма -->
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru" oninput="price-from-output.value=price-range-from.value price-to-output.value=price-range-to.value">
+            <fieldset>
+              <legend>Инфраструктура:</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" name="pool" id="filter-pool" checked>
+                  <label for="filter-pool">Бассейн</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="parking" id="filter-parking">
+                  <label for="filter-parking">Парковка</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="wifi" id="filter-wifi">
+                  <label for="filter-wifi">Wi-Fi</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Тип жилья:</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" name="hotel" id="filter-hotel" checked>
+                  <label for="filter-hotel">Гостиница</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="motel" id="filter-motel" checked>
+                  <label for="filter-motel">Мотель</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="appartment" id="filter-appartment" checked>
+                  <label for="filter-appartment">Апартаменты</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Стоимость в сутки (Р):</legend>
+              <label for="price-range-from">От</label>
+              <output name="price-from-output"></output>
+              <label for="price-range-to">До</label>
+              <output name="price-to-output"></output>
+
+              <input type="range" name="price-per-day" id="price-range-from" min="0" max="3000" step="100">
+              <input type="range" name="price-per-day" id="price-range-to" min="0" max="3000" step="100">
+            </fieldset>
+            <button type="submit">Показать</button>
+          </form>
+          <section class="sorting">
+            <h3 class="visually-hidden">Сортировка результатов</h3>
+            <p>Найдено: 3</p>
+            <p>
+              Сортировка:
+              <button type="button">По цене</button>
+              <button type="button">По типу</button>
+              <button type="button">По рейтингу</button>
+            </p>
+            <p>
+              <button type="button" class="visually-hidden ascending">По возрастанию</button>
+              <button type="button" class="visually-hidden descending">По убыванию</button>
+            </p>
+          </section>
         </section>
         <section class="hotels-catalog">
           <ul class="hotels-list">

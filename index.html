@@ -73,7 +73,27 @@
   				<b>Заинтересовались?</b>
   				<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
   				<a href="hotels.html" class="button">Поиск гостиницы в Седоне</a>
-  				<!-- SEARCH-FORM. Не нужно размечать содержимое всплывающих окон (попапов), которые отрисованы в скрытых слоях в макетах. Вы завершите их позже. -->
+  				<section class="popup search-form">
+  					<form class="search" method="get" action="https://echo.htmlacademy.ru">
+  						<p>
+  							<label for="arrival-date">Дата заезда:</label>
+  							<input type="date" name="arrival-date" id="arrival-date" value="2017-04-24">
+  						</p>
+  						<p>
+  							<label for="departure-date">Дата выезда:</label>
+  							<input type="date" name="departure-date" id="departure-date" value="2017-07-04">
+  						</p>
+  						<p>
+  							<label for="adults">Взрослые:</label>
+  							<input type="number" name="adults" id="adults" value="2">
+  						</p>
+  						<p>
+  							<label for="children">Дети:</label>
+  							<input type="number" name="children" id="children" value="0">
+  						</p>
+  						<button type="submit">Найти</button>
+  					</form>
+  				</section>
   			</section>
   			<section class="map">
   				<h2 class="visually-hidden">Карта Седоны</h2>
