@@ -22,7 +22,7 @@
   		<main>
         <section class="filter-form">
           <h2 class="visually-hidden">Фильтр: поиск гостиницы</h2>
-          <form class="filter" method="get" action="https://echo.htmlacademy.ru" oninput="price-from-output.value=price-range-from.value price-to-output.value=price-range-to.value">
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
             <fieldset>
               <legend>Инфраструктура:</legend>
               <ul>
@@ -60,9 +60,9 @@
             <fieldset>
               <legend>Стоимость в сутки (Р):</legend>
               <label for="price-range-from">От</label>
-              <output name="price-from-output"></output>
+              <input name="price-from-input"></input>
               <label for="price-range-to">До</label>
-              <output name="price-to-output"></output>
+              <input name="price-to-input"></input>
 
               <input type="range" name="price-per-day" id="price-range-from" min="0" max="3000" step="100">
               <input type="range" name="price-per-day" id="price-range-to" min="0" max="3000" step="100">
@@ -74,13 +74,13 @@
             <p>Найдено: 3</p>
             <p>
               Сортировка:
-              <button type="button">По цене</button>
-              <button type="button">По типу</button>
-              <button type="button">По рейтингу</button>
+              <a class="sort-button" href="#">По цене</a>
+              <a class="sort-button" href="#">По типу</a>
+              <a class="sort-button" href="#">По рейтингу</a>
             </p>
             <p>
-              <button type="button" class="visually-hidden ascending">По возрастанию</button>
-              <button type="button" class="visually-hidden descending">По убыванию</button>
+              <a href="#" class="visually-hidden ascending">По возрастанию</a>
+              <a href="#" class="visually-hidden descending">По убыванию</a>
             </p>
           </section>
         </section>
