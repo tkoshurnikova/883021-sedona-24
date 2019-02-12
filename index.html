@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   	<div class="container">
@@ -22,7 +25,6 @@
   		<main>
   			<section class="intro">
   				<img src="img/welcome.jpg" alt="Добро пожаловать в Седону!" width="1200" height="800">
-  				<!-- На данном этапе текст и фоновую картинку слила в один jpg -->
   			</section>
   			<section class="features">
   				<h2 class="visually-hidden">Почему стоит приехать в Седону?</h2>
@@ -31,57 +33,60 @@
 	  				<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 	  			</div>
 	  			<section class="features-list">
-	  				<ol>
-	  					<li>
+	  				<ol class="features-list-items">
+	  					<li class="features-list-item">
 	  						<h3>Настоящий городок</h3>
 	  						<p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-	  						<ul>
-	  							<li>
+	  					<li class="features-list-item">
+	  						<h3>Там есть Мост дьявола</h3>
+	  						<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+	  					</li>
+	  					<li class="features-list-item">
+	  						<h3>Небольшая площадь</h3>
+	  						<p>Все достопримечательности находятся очень близко</p>
+	  					</li>
+	  					<li class="features-list-item">
+	  						<h3>Красивая дорога</h3>
+	  						<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+	  					</li>
+	  					<li class="features-list-item">
+	  						<h3>Мало туристов</h3>
+	  						<p>Большинство едет в гранд каньон и толпится там</p>
+	  					</li>
+	  					<li>
+	  						<ul class="more-features-items">
+	  							<li class="more-features-item">
 	  								<h4>Жильё</h4>
 	  								<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
 	  							</li>
-	  							<li>
+	  							<li class="more-features-item">
 	  								<h4>Еда</h4>
 	  								<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 	  							</li>
-	  							<li>
+	  							<li class="more-features-item">
 	  								<h4>Сувениры</h4>
 	  								<p>Не только китайского, но и местного производства!</p>
 	  							</li>
 	  						</ul>
 	  					</li>
-	  					<li>
-	  						<h3>Там есть Мост дьявола</h3>
-	  						<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-	  					</li>
-	  					<li>
-	  						<h3>Небольшая площадь</h3>
-	  						<p>Все достопримечательности находятся очень близко</p>
-	  					</li>
-	  					<li>
-	  						<h3>Красивая дорога</h3>
-	  						<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-	  					</li>
-	  					<li>
-	  						<h3>Мало туристов</h3>
-	  						<p>Большинство едет в гранд каньон и толпится там</p>
-	  					</li>
 	  				</ol>
 	  			</section>
   			</section>
-  			<section class="search-form-title">
+  			<section class="search-form-section">
   				<b>Заинтересовались?</b>
-  				<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-  				<a href="hotels.html" class="button">Поиск гостиницы в Седоне</a>
+  				<p>Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+  				<a href="hotels.html" class="search-form-link">Поиск гостиницы в Седоне</a>
   				<section class="popup search-form">
   					<form class="search" method="get" action="https://echo.htmlacademy.ru">
   						<p>
   							<label for="arrival-date">Дата заезда:</label>
-  							<input type="date" name="arrival-date" id="arrival-date" value="2017-04-24"><button type="button" class="calendar-icon visually-hidden">Выбрать дату</button>
+  							<input type="date" name="arrival-date" id="arrival-date" value="2017-04-24">
+  							<button type="button" class="calendar-icon visually-hidden">Выбрать дату</button>
   						</p>
   						<p>
   							<label for="departure-date">Дата выезда:</label>
   							<input type="date" name="departure-date" id="departure-date" value="2017-07-04">
+  							<button type="button" class="calendar-icon visually-hidden">Выбрать дату</button>
   						</p>
   						<p>
   							<label for="adults">Взрослые:</label>
@@ -91,14 +96,13 @@
   							<label for="children">Дети:</label>
   							<input type="number" name="children" id="children" value="0">
   						</p>
-  						<button type="submit">Найти</button>
+  						<button type="submit" class="search-submit">Найти</button>
   					</form>
   				</section>
   			</section>
   			<section class="map">
   				<h2 class="visually-hidden">Карта Седоны</h2>
   				<img src="img/map.jpg" alt="Карта Седоны" width="1718" height="748">
-
   			</section>
   		</main>
   		<footer class="main-footer">
