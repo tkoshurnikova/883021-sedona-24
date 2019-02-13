@@ -66,7 +66,7 @@ a {
 
 .features-list li {
 	width: 400px;
-	height: 257px;
+	min-height: 257px;
 
 	color: #000000;
 
@@ -197,4 +197,158 @@ a {
 
 .main-footer li {
 	list-style: none;
+}
+
+.site-navigation-current a,
+.site-navigation-current a:hover,
+.site-navigation-current a:focus {
+	color: #a1968f;
+}
+
+.filter {
+	background-color: #596975;
+	color: #ffffff;
+}
+
+.filter fieldset {
+	border: none;
+}
+
+.filter legend {
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: 700;
+}
+
+.filter ul {
+	list-style: none;
+	line-height: 21px;
+}
+
+.filter-input:disabled + label {
+	color: #3c4040;
+}
+
+.filter button {
+	width: 133px
+	height: 32px;
+
+	border: 2px solid #ffffff;
+	background-color: transparent;
+
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.sorting {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.sorting b {
+	font-weight: 700;
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.sorting p {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.sort-button-active {
+	color: #81b3d2;
+}
+
+.sort-button {
+	border-bottom: 1px dashed #81b3d2;
+	color: #cacaca;
+}
+
+.sort-button:hover,
+.sort-button:focus {
+	color: #81b3d2;
+}
+
+.sort-button:active {
+	border: none;
+	color: #000000;
+}
+
+.hotels-list {
+	list-style: none;
+}
+
+.hotel-item {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.hotel-name {
+	color: #000000;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+}
+
+.hotel-name:hover,
+.hotel-name:focus {
+	color: #81b3d2;
+}
+
+.hotel-name:active {
+	color: #cacaca;
+}
+
+.description {
+	line-height: 21px;
+	color: #333333;
+}
+
+.button-more,
+.button-book {
+	height: 29px;
+
+	color: #ffffff;
+	font-weight: 700;
+}
+
+.button-more {
+	width: 111px;
+	background-color: #81b3d2;
+}
+
+.button-more:hover,
+.button-more:focus {
+	background-color: #669ec0;
+}
+
+.button-more:active {
+	background-color: #5496bd;
+	color: #94b9d2;
+}
+
+.button-book {
+	width: 143px;
+	background-color: #766357;
+}
+
+.button-book:hover,
+.button-book:focus {
+	background-color: #604e43;
+}
+
+.button-book:active {
+	background-color: #503e33;
+	color: #928a85;
+}
+
+.stars {
+	color: #81b3d2;
+	font-size: 18px;
+	letter-spacing: 7px;
+}
+
+.rate {
+	background-color: #f2f2f2;
+	color: #666666;
+	line-height: 21px;
 }
