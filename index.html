@@ -12,13 +12,13 @@
   		<header class="main-header">
   			<nav class="main-navigation">
   				<a class="main-header-logo">
-  					<img src="img/svg-sedona/logo-sedona.svg" alt="Логотип Седоны" width="140" height="71">
+  					<img src="img/svg-sedona/logo-sedona.svg" alt="Логотип Седоны" width="138" height="70">
   				</a>
   				<ul class="site-navigation">
-  					<li><a href="#">Информация</a></li>
-  					<li><a href="#">Фото и видео</a></li>
-  					<li><a href="#">Карта штата</a></li>
-  					<li><a href="hotels.html">Гостиницы</a></li>
+  					<li class="nav-left"><a href="#">Информация</a></li>
+  					<li class="nav-left"><a href="#">Фото и видео</a></li>
+  					<li class="nav-right"><a href="#">Карта штата</a></li>
+  					<li class="nav-right"><a href="hotels.html">Гостиницы</a></li>
   				</ul>
   			</nav>  			
   		</header>
@@ -28,15 +28,22 @@
   			</section>
   			<section class="features">
   				<h2 class="visually-hidden">Почему стоит приехать в Седону?</h2>
-  				<div class="features-intro">
-	  				<p><b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b></p>
-	  				<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-	  			</div>
+  				<div class="features-intro-mask">
+	  				<div class="features-intro">
+	  					<div class="features-intro-text">
+			  				<b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
+			  				<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+			  			</div>
+		  			</div>
+		  		</div>
 	  			<section class="features-list">
 	  				<ol class="features-list-items">
 	  					<li class="features-list-item">
 	  						<h3>Настоящий городок</h3>
 	  						<p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+	  					</li>
+	  					<div class="features-img real-town-img"></div>
+	  					<div class="features-img devil-bridge-img"></div>
 	  					<li class="features-list-item">
 	  						<h3>Там есть Мост дьявола</h3>
 	  						<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -53,7 +60,7 @@
 	  						<h3>Мало туристов</h3>
 	  						<p>Большинство едет в гранд каньон и толпится там</p>
 	  					</li>
-	  					<li>
+	  					<li class="features-list-item expanded-features-list-item">
 	  						<ul class="more-features-items">
 	  							<li class="more-features-item">
 	  								<h4>Жильё</h4>
