@@ -15,10 +15,10 @@
   					<img src="img/svg-sedona/logo-sedona.svg" alt="Логотип Седоны" width="140" height="71">
   				</a>
   				<ul class="site-navigation">
-  					<li><a href="#">Информация</a></li>
-  					<li><a href="#">Фото и видео</a></li>
-  					<li><a href="#">Карта штата</a></li>
-  					<li class="site-navigation-current"><a>Гостиницы</a></li>
+  					<li class="nav-left"><a href="#">Информация</a></li>
+  					<li class="nav-left"><a href="#">Фото и видео</a></li>
+  					<li class="nav-right"><a href="#">Карта штата</a></li>
+  					<li class="nav-right site-navigation-current"><a>Гостиницы</a></li>
   				</ul>
   			</nav>  			
   		</header>
@@ -26,50 +26,51 @@
         <section class="filter-form">
           <h2 class="visually-hidden">Фильтр: поиск гостиницы</h2>
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-            <fieldset>
-              <legend>Инфраструктура:</legend>
-              <ul>
-                <li>
-                  <input class="filter-input" type="checkbox" name="pool" id="filter-pool" checked>
-                  <label for="filter-pool">Бассейн</label>
-                </li>
-                <li>
-                  <input class="filter-input" type="checkbox" name="parking" id="filter-parking">
-                  <label for="filter-parking">Парковка</label>
-                </li>
-                <li>
-                  <input class="filter-input" type="checkbox" name="wifi" id="filter-wifi">
-                  <label for="filter-wifi">Wi-Fi</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset>
-              <legend>Тип жилья:</legend>
-              <ul>
-                <li>
-                  <input class="filter-input" type="checkbox" name="hotel" id="filter-hotel" checked>
-                  <label for="filter-hotel">Гостиница</label>
-                </li>
-                <li>
-                  <input class="filter-input" type="checkbox" name="motel" id="filter-motel" checked>
-                  <label for="filter-motel">Мотель</label>
-                </li>
-                <li>
-                  <input class="filter-input" type="checkbox" name="appartment" id="filter-appartment" checked>
-                  <label for="filter-appartment">Апартаменты</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset>
-              <legend>Стоимость в сутки (Р):</legend>
-              <label for="price-range-from">От</label>
-              <input name="price-from-input"></input>
-              <label for="price-range-to">До</label>
-              <input name="price-to-input"></input>
-
-              <input type="range" name="price-per-day" id="price-range-from" min="0" max="3000" step="100">
-              <input type="range" name="price-per-day" id="price-range-to" min="0" max="3000" step="100">
-            </fieldset>
+            <div class="fieldsets">
+              <fieldset class="infrastructure-fieldset">
+                <legend>Инфраструктура:</legend>
+                <ul>
+                  <li>
+                    <input class="filter-input" type="checkbox" name="pool" id="filter-pool" checked>
+                    <label for="filter-pool">Бассейн</label>
+                  </li>
+                  <li>
+                    <input class="filter-input" type="checkbox" name="parking" id="filter-parking">
+                    <label for="filter-parking">Парковка</label>
+                  </li>
+                  <li>
+                    <input class="filter-input" type="checkbox" name="wifi" id="filter-wifi">
+                    <label for="filter-wifi">Wi-Fi</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="accommodation-fieldset">
+                <legend>Тип жилья:</legend>
+                <ul>
+                  <li>
+                    <input class="filter-input" type="checkbox" name="hotel" id="filter-hotel" checked>
+                    <label for="filter-hotel">Гостиница</label>
+                  </li>
+                  <li>
+                    <input class="filter-input" type="checkbox" name="motel" id="filter-motel" checked>
+                    <label for="filter-motel">Мотель</label>
+                  </li>
+                  <li>
+                    <input class="filter-input" type="checkbox" name="appartment" id="filter-appartment" checked>
+                    <label for="filter-appartment">Апартаменты</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="price-fieldset">
+                <legend>Стоимость в сутки (Р):</legend>
+                <label for="price-range-from">От</label>
+                <input name="price-from-input"></input>
+                <label for="price-range-to">До</label>
+                <input name="price-to-input"></input>
+                <input type="range" name="price-per-day" id="price-range-from" min="0" max="3000" step="100">
+                <input type="range" name="price-per-day" id="price-range-to" min="0" max="3000" step="100">
+              </fieldset>
+            </div>
             <button type="submit">Показать</button>
           </form>
           <section class="sorting">
@@ -134,7 +135,7 @@
           </ul>          
         </section>
       </main>
-      <footer class="main-footer">
+      <footer class="inner-footer">
         <p class="footer-hashtag">#visitsedona</p>
         <ul>
           <li><a class="social-button" href="#">Twitter</a></li>
