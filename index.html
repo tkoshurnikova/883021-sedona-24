@@ -24,7 +24,7 @@
   		</header>
   		<main>
   			<section class="intro">
-  				<img src="img/welcome.jpg" alt="Добро пожаловать в Седону!" width="1200" height="800">
+  				<img src="img/welcome.jpg" alt="Добро пожаловать в Седону!" width="1200" height="509">
   			</section>
   			<section class="features">
   				<h2 class="visually-hidden">Почему стоит приехать в Седону?</h2>
@@ -62,15 +62,15 @@
 	  					</li>
 	  					<li class="expanded-features-list-item">
 	  						<ul class="more-features-items">
-	  							<li class="more-features-item">
+	  							<li class="more-features-item living-icon">
 	  								<h4>Жильё</h4>
 	  								<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
 	  							</li>
-	  							<li class="more-features-item">
+	  							<li class="more-features-item food-icon">
 	  								<h4>Еда</h4>
 	  								<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 	  							</li>
-	  							<li class="more-features-item">
+	  							<li class="more-features-item souvenirs-icon">
 	  								<h4>Сувениры</h4>
 	  								<p>Не только китайского, но и местного производства!</p>
 	  							</li>
@@ -81,29 +81,39 @@
   			</section>
   			<section class="search-form-section">
   				<b>Заинтересовались?</b>
-  				<p>Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+  				<p class="search-intro">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
   				<a href="hotels.html" class="search-form-link">Поиск гостиницы в Седоне</a>
   				<section class="popup search-form">
   					<form class="search" method="get" action="https://echo.htmlacademy.ru">
   						<p>
   							<label for="arrival-date">Дата заезда:</label>
   							<input type="date" name="arrival-date" id="arrival-date" value="2017-04-24">
-  							<button type="button" class="calendar-icon visually-hidden">Выбрать дату</button>
+  							<button type="button" class="calendar-icon"><span class="visually-hidden">Выбрать дату</span></button>
   						</p>
   						<p>
   							<label for="departure-date">Дата выезда:</label>
   							<input type="date" name="departure-date" id="departure-date" value="2017-07-04">
-  							<button type="button" class="calendar-icon visually-hidden">Выбрать дату</button>
+  							<button type="button" class="calendar-icon"><span class="visually-hidden">Выбрать дату</span></button>
   						</p>
-  						<p>
-  							<label for="adults">Взрослые:</label>
-  							<input type="number" name="adults" id="adults" value="2">
-  						</p>
-  						<p>
-  							<label for="children">Дети:</label>
-  							<input type="number" name="children" id="children" value="0">
-  						</p>
-  						<button type="submit" class="search-submit">Найти</button>
+  						<div class="adults-and-children">
+	  						<p>
+	  							<label for="adults">Взрослые:</label>
+	  							<span class="people-count-field">
+		  							<button type="button" class="less-button"><span class="visually-hidden">Уменьшить</span></button>
+		  							<input type="text" name="adults" id="adults" value="2">
+		  							<button type="button" class="more-button"><span class="visually-hidden">Увеличить</span></button>
+		  						</span>
+	  						</p>
+	  						<p>
+	  							<label for="children">Дети:</label>
+	  							<span class="people-count-field">
+		  							<button type="button" class="less-button"><span class="visually-hidden">Уменьшить</span></button>
+		  							<input type="text" name="children" id="children" value="0">
+		  							<button type="button" class="more-button"><span class="visually-hidden">Увеличить</span></button>
+		  						</span>
+	  						</p>
+	  					</div>
+	  					<button type="submit" class="search-submit">Найти</button>
   					</form>
   				</section>
   			</section>
@@ -115,9 +125,9 @@
   		<footer class="main-footer">
   			<p class="footer-hashtag">#visitsedona</p>
   			<ul>
-	          <li><a class="social-button" href="#">Twitter</a></li>
-	          <li><a class="social-button" href="#">Facebook</a></li>
-	          <li><a class="social-button" href="#">Youtube</a></li>
+	          <li><a class="social-button tw-button" href="#"><span class="visually-hidden">Twitter</span></a></li>
+	          <li><a class="social-button fb-button" href="#"><span class="visually-hidden">Facebook</span></a></li>
+	          <li><a class="social-button yt-button" href="#"><span class="visually-hidden">Youtube</span></a></li>
 	        </ul>
 	        <p class="footer-copyright">
 		       <b>Website by</b> 

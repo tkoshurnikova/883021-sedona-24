@@ -31,16 +31,28 @@
                 <legend>Инфраструктура:</legend>
                 <ul>
                   <li>
-                    <input class="filter-input" type="checkbox" name="pool" id="filter-pool" checked>
-                    <label for="filter-pool">Бассейн</label>
+                    <label>
+                      <input class="filter-input visually-hidden" type="checkbox" name="pool" id="filter-pool" checked>                    
+                      <span class="if-checked"></span>
+                      <span class="filter-checkbox"></span>
+                      Бассейн
+                    </label>
                   </li>
                   <li>
-                    <input class="filter-input" type="checkbox" name="parking" id="filter-parking">
-                    <label for="filter-parking">Парковка</label>
+                    <label>
+                      <input class="filter-input visually-hidden" type="checkbox" name="parking" id="filter-parking">                    
+                      <span class="if-checked"></span>
+                      <span class="filter-checkbox"></span>
+                      Парковка
+                    </label>
                   </li>
                   <li>
-                    <input class="filter-input" type="checkbox" name="wifi" id="filter-wifi">
-                    <label for="filter-wifi">Wi-Fi</label>
+                    <label>
+                      <input class="filter-input visually-hidden" type="checkbox" name="wifi" id="filter-wifi">                   
+                      <span class="if-checked"></span>
+                      <span class="filter-checkbox"></span>
+                      Wi-Fi
+                    </label>
                   </li>
                 </ul>
               </fieldset>
@@ -48,27 +60,44 @@
                 <legend>Тип жилья:</legend>
                 <ul>
                   <li>
-                    <input class="filter-input" type="checkbox" name="hotel" id="filter-hotel" checked>
-                    <label for="filter-hotel">Гостиница</label>
+                    <label>
+                      <input class="filter-input visually-hidden" type="checkbox" name="hotel" id="filter-hotel" checked>                   
+                      <span class="if-checked"></span>
+                      <span class="filter-checkbox"></span>
+                      Гостиница
+                    </label>
                   </li>
                   <li>
-                    <input class="filter-input" type="checkbox" name="motel" id="filter-motel" checked>
-                    <label for="filter-motel">Мотель</label>
+                    <label>
+                      <input class="filter-input visually-hidden" type="checkbox" name="motel" id="filter-motel" checked>                  
+                      <span class="if-checked"></span>
+                      <span class="filter-checkbox"></span>
+                      Мотель
+                    </label>
                   </li>
                   <li>
-                    <input class="filter-input" type="checkbox" name="appartment" id="filter-appartment" checked>
-                    <label for="filter-appartment">Апартаменты</label>
+                    <label>
+                      <input class="filter-input visually-hidden" type="checkbox" name="appartment" id="filter-appartment" checked>
+                      <span class="if-checked"></span>
+                      <span class="filter-checkbox"></span>
+                      Апартаменты
+                    </label>
                   </li>
                 </ul>
               </fieldset>
               <fieldset class="price-fieldset">
                 <legend>Стоимость в сутки (Р):</legend>
-                <label for="price-range-from">От</label>
-                <input name="price-from-input"></input>
-                <label for="price-range-to">До</label>
-                <input name="price-to-input"></input>
-                <input type="range" name="price-per-day" id="price-range-from" min="0" max="3000" step="100">
-                <input type="range" name="price-per-day" id="price-range-to" min="0" max="3000" step="100">
+                <div class="price-controls">
+                  <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                  <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                </div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>                
               </fieldset>
             </div>
             <button type="submit">Показать</button>
@@ -76,15 +105,14 @@
           <section class="sorting">
             <h3 class="visually-hidden">Сортировка результатов</h3>
             <b>Найдено: 3</b>
-            <p>
-              Сортировка:
+            <p class="sort-by">Сортировка:
               <a class="sort-button-active" href="#">По цене</a>
               <a class="sort-button" href="#">По типу</a>
               <a class="sort-button" href="#">По рейтингу</a>
             </p>
-            <p>
-              <a href="#" class="visually-hidden ascending">По возрастанию</a>
-              <a href="#" class="visually-hidden descending">По убыванию</a>
+            <p class="arrows">
+              <a href="#" class="arrow-top"><span class="visually-hidden">По возрастанию</span></a>
+              <a href="#" class="arrow-bottom active-arrow"><span class="visually-hidden">По убыванию</span></a>
             </p>
           </section>
         </section>
@@ -138,15 +166,15 @@
       <footer class="inner-footer">
         <p class="footer-hashtag">#visitsedona</p>
         <ul>
-          <li><a class="social-button" href="#">Twitter</a></li>
-          <li><a class="social-button" href="#">Facebook</a></li>
-          <li><a class="social-button" href="#">Youtube</a></li>
-        </ul>
-        <p class="footer-copyright">
-          <b>Website by</b> 
-          <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/svg-sedona/logo-htmlacademy.svg" alt="HTML Academy" width="115" height="41">
-          </a>
+            <li><a class="social-button tw-button" href="#"><span class="visually-hidden">Twitter</span></a></li>
+            <li><a class="social-button fb-button" href="#"><span class="visually-hidden">Facebook</span></a></li>
+            <li><a class="social-button yt-button" href="#"><span class="visually-hidden">Youtube</span></a></li>
+          </ul>
+          <p class="footer-copyright">
+           <b>Website by</b> 
+           <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="img/svg-sedona/logo-htmlacademy.svg" alt="HTML Academy" width="115" height="41">
+           </a>
         </p>
       </footer>
     </div>
