@@ -176,6 +176,7 @@ a {
 
 .intro {
 	min-height: 510px;
+	position: relative;
 
 }
 
@@ -187,8 +188,8 @@ a {
 .intro::after {
 	content: "";
 	position: absolute;
-	top: 508px;
-	left: 192px;
+	bottom: 0;
+	left: 0;
 
 	width: 1201px;
 	height: 59px;
