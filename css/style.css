@@ -1209,7 +1209,7 @@ a {
 .rating {
 	position: absolute;
 	right: 72px;
-	top: 11px;
+	top: 27px;
 	width: 112px;
 }
 
@@ -1217,11 +1217,16 @@ a {
 	width: 112px;
 	display: block;
 	text-align: right;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
-.star {
+.stars li {
 	vertical-align: middle;
 	margin-left: 2px;
+	display: inline-block;
+
 }
 
 .rate {
@@ -1231,8 +1236,8 @@ a {
 	display: block;
 	width: 112px;
 	height: 27px;
-	padding: 5px 13px 6px 16px;
-	margin-top: 42px;
+	padding: 4px 13px 6px 16px;
+	margin-top: 39px;
 	-webkit-box-sizing: border-box;
 			box-sizing: border-box;
 }
